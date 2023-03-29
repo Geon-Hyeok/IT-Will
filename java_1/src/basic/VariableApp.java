@@ -22,6 +22,12 @@ package basic;
 public class VariableApp {
 
 	public static void main(String[] args) {
+		int su; // 정수값을 저장하기 위한 변수 선언(생성)
+		// 값을 저장하기 위한 변수는 대입연산자 왼쪽에 반드시 작성
+		su = 100; // 대입연산자(=)를 이용하여 값을 변수에 저장
+		System.out.print("초기값 = ");
+		System.out.println(su);
+		
 		
 		
 
