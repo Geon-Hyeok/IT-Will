@@ -7,11 +7,11 @@ package basic;
 // 2. 참조형(ReferenceType) : 특정 대상을 표현하기 위한 자료형 - 식별자(클래스)
 // => String 클래스 : 문자열을 표현하기 위한 자료형(클래스)
 
-// 리터럴(Literal) : 프로그램에서 값을 표현하여 사용하는 방식
-
 public class DataTypeApp {
 	public static void main(String[] args) {
 		// 정수형 (IntegerType) 리터럴 : 소숫점이 없는 숫자값
+		System.out.println("<< 정수형 (IntegerType)>>");
+		System.out.println("정수형 (10진수 100) = " + 100);
 	}
 
 }
