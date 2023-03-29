@@ -28,9 +28,52 @@ public class VariableApp {
 		System.out.print("초기값 = ");
 		System.out.println(su);
 		
+		// int su; -> 동일한 이름의 변수를 재선언할 경우 에러 발생
+		su = 200;
+		System.out.print("변경값 = ");
+		System.out.println(su);
+		
+		System.out.println("=======================================================");
+		
+		int num = 100; // 변수 선언 및 초기값 저장
+		
+		// "문자열"
+		System.out.println("num =" + num);
+		System.out.println("=================================================================");
+		
+		System.out.println("올해는 " + 2+0+2+3+"년 입니다.");
+		// "" : 비어있는 문자열 = NullString
+		System.out.println(""+2+0+2+3+"년은 토끼띠해입니다.");
+		System.out.println("==================================================================");
+		
+		// 동일한 자료형의 변수는 , 기호를 사용하여 나열 선언 가능
+		int num1 = 100, num2 = 200;
+		System.out.println("연산결과 = " + num1 + num2);
+		System.out.println(num1 + num2 + " = 연산결과 ");
+		System.out.println("연산결과 = " + (num1 + num2));
+		
+		System.out.println("연산결과 = " + num1*num2);
+		System.out.println("연산결과 = " + (num1*num2));
+		System.out.println("=======================================================");
+		
+		int kor = 88, eng = 90;
+		int tot = kor + eng;
+		System.out.println(tot); // 연산 결과를 변수에 저장
+		System.out.println("Total : " + tot);
+		System.out.println("=======================================================");
+		
+		// 변수에 값이 저장되어 있지 않은 상태에서 변수를 사용할 경우 에러 발생
+		// int count;
+		// System.out.println("count + " + count);
+		
+		// 변수에 저장 불가능한 값을 저장할 경우 에러 발생
+		// int count = 10.0;
+		
+	
 		
 		
-
+		
+		
 	}
 
 }
