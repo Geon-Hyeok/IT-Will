@@ -54,8 +54,8 @@ public class TypeCastApp {
 		
 		// 소숫점 2자리 위치까지만 출력되도록 명령 작성
 		System.out.println("number(내림) = " + (int)(number*100)/100.0);
-		System.out.println("number(내림) = " + (int)(number*100+0.5)/100.0);
-		System.out.println("number(내림) = " + (int)(number*100+0.9)/100.0);
+		System.out.println("number(반올림) = " + (int)(number*100+0.5)/100.0);
+		System.out.println("number(올림) = " + (int)(number*100+0.9)/100.0);
 		
 	}
 
