@@ -1,5 +1,5 @@
 
-package example;
+package 문제답안;
 
 public class VariableExample {
 	public static void main(String[] args) {

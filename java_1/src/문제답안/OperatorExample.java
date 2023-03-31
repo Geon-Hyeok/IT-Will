@@ -1,4 +1,4 @@
-package example;
+package 문제답안;
 
 public class OperatorExample {
 	public static void main(String[] args) {
