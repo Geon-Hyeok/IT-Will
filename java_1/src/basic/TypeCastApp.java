@@ -19,7 +19,9 @@ public class TypeCastApp {
 		
 		int kor = 95, eng = 90;
 		int tot = kor+eng;
+		double ave1 = tot/2;
 		double ave = tot/2.0;
+		System.out.println("총점 = " + tot + ", 평균 =" + ave1);
 		System.out.println("총점 = " + tot + ", 평균 =" + ave);
 		
 		// int 자료형보다 작은 자료형의 값은 무조건 int 자료형으로 형변환되어 처리
@@ -52,10 +54,24 @@ public class TypeCastApp {
 		double number=1.23456789;
 		System.out.println("number = " + number);
 		
+		
+		// 소숫점 1자리 위치까지만 출력되도록 명령 작성
+		System.out.println("number(내림) = " + (int)(number*10)/10.0);
+		System.out.println("number(반올림) = " + (int)(number*10+0.5)/10.0);
+		System.out.println("number(올림) = " + (int)(number*10+0.9)/10.0);
+		
 		// 소숫점 2자리 위치까지만 출력되도록 명령 작성
 		System.out.println("number(내림) = " + (int)(number*100)/100.0);
 		System.out.println("number(반올림) = " + (int)(number*100+0.5)/100.0);
 		System.out.println("number(올림) = " + (int)(number*100+0.9)/100.0);
+		
+		// 소숫점 3자리 위치까지만 출력되도록 명령 작성
+		System.out.println("number(내림) = " + (int)(number*1000)/1000.0);
+		System.out.println("number(반올림) = " + (int)(number*1000+0.5)/1000.0);
+		System.out.println("number(올림) = " + (int)(number*1000+0.9)/1000.0);
+		
+		double U = 9.87654321;
+		System.out.println("number(올림) = " + (int)(U*1000+0.9)/1000.0);
 		
 	}
 

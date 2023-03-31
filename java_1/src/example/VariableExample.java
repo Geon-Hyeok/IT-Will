@@ -11,7 +11,7 @@ public class VariableExample {
 		//높이가 9이고 밑변의 길이가 7인 삼각형의 넓이를 계산하여 출력하세요.
 		
 		int 높이 = 9, 밑변 = 7;
-		int 넓이 = (높이*밑변)/2;
+		double 넓이 = (높이*밑변)/2.0;
 		
 		System.out.println("삼각형의 넓이 : " + 넓이);
 
@@ -20,7 +20,7 @@ public class VariableExample {
 		//10명의 전체 몸무게가 759Kg인 경우 평균 몸무게를 계산하여 출력하세요.
 		
 		int 인원 = 10, 전체몸무게 = 759;
-		int 평균몸무게 = 전체몸무게/인원;
+		double 평균몸무게 = (double)전체몸무게/인원;
 		
 		System.out.println("평균 몸무게 : " + 평균몸무게+"kg");
 
@@ -33,9 +33,9 @@ public class VariableExample {
 		String name = "홍길동";
 		int 국어 = 89, 영어 = 93, 수학 = 95;
 		int 총점 = 국어+영어+수학;
-		double 평균 = (int)((총점/3)*100)/100;
+		double 평균 = 총점/3.0;
 		
-		System.out.println(name + ": " + "총점 - " + 총점+"점, " + "평균 - " + 평균+"점");
+		System.out.println(name + ": " + "총점 : " + 총점+"점, " + "평균 : " + (int)(평균*10)/10.0+"점");
 
 
 		System.out.println("======================================================");

@@ -32,13 +32,14 @@ public class DataTypeApp {
 		byte a1 = 127; // 1Byte : -128 ~ 127
 		short a2 = 32767; // 2Byte : -32768 ~ 32767
 		int a3 = 2147483647; // 4Byte: -2147483648 ~ 2147483647
+		long a4 = 2147483638L; // 8Byte
 		
 		System.out.println("a1 = " + a1);
 		System.out.println("a2 = " + a2);
 		System.out.println("a3 = " + a3);
 		
 		// int a4 = 100L; => 값에 대한 손실이 발생할 수 있으므로 에러 발생
-		long a5 = 100L; // => 자료형이 큰 변수에 작은 리터럴 저장가능
+		long a5 = 100; // => 자료형이 큰 변수에 작은 리터럴 저장가능
 		System.out.println("a5 = " + a5);
 		System.out.println("============================================");
 		

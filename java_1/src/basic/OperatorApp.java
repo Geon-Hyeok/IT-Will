@@ -4,6 +4,12 @@ package basic;
 // 피연산자 : 연산자에 의해 계산되는 값을 의미
 // => 단항연산자(피연산자 : 1개), 이항연산자(피연산자 : 2개), 삼항연산자(피연산자 : 3개)
 
+/* 일반적으로 연산식은 왼쪽에서 오른쪽 방향으로 처리되지만 단항 연산자와 대입 연산자를 사용한
+연산식은 오른쪽에서 왼쪽 방향으로 처리된다. 
+ex) A + B + C    /   A = B = C
+    --------->       <---------
+*/
+
 public class OperatorApp {
 
 	public static void main(String[] args) {
@@ -55,6 +61,11 @@ public class OperatorApp {
 		System.out.println("a4 = " + a4 + ", a5 = " + a5);
 		System.out.println("result1 = " + result1 + " , result2 = " + result2);
 		System.out.println("========================================");
+		
+		int a6 = 10;
+		System.out.println("a6 ++ = " + a6++);
+		System.out.println("a6 = " + a6);
+		System.out.println("========================================");
 
 		// 이항 연산자 : 피연산자의 갯수가 2개인 연산자
 		// => 산술 연산자, 이동 연산자, 비교 연산자, 논리 연산자, 대입 연산자
@@ -98,7 +109,7 @@ public class OperatorApp {
 		 */
 
 		int d1 = 20, d2 = 10;
-		System.out.println("큰 값 = " + (d1 > d2 ? d1 : d2));
+		System.out.println("큰 값 = " + (d1 > d2 ? d1 : d2)); // d1이 d2보다 클 경우 d1의 값을 제공하고 아닐경우 d2의 값을 제공한다.
 		System.out.println("========================================");
 
 		int d3 = 11;
@@ -117,6 +128,10 @@ public class OperatorApp {
 		e+=20; // e = e + 20;
 		System.out.println("e = " + e);
 		System.out.println("========================================");
+		
+		
+		
+		
 		
 		
 
