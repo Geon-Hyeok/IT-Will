@@ -4,13 +4,11 @@ public class IfExample {
 	public static void main(String[] args) {
 		//변수에 저장된 문자값을 출력하세요.
 		//단, 변수에 저장된 문자값이 소문자인 경우 대문자로 변환하여 출력하세요.
-		char mun='x'; // 122
+		char mun='x'; // 122				
 		
-		int i = (int)mun;
-		
-		System.out.println((char) 88);
-		
-		mun -= 32;
+		if(mun>='a' && mun<='Z') {// 변수값이 영문자 소문자인 경우
+		mun-=32;  // mun=(char)(mun-32);   // 소문자를 대문자로 변환하여 저장
+		}
 		
 		
 
@@ -32,15 +30,20 @@ public class IfExample {
 		// => 위 조건을 만족하는 년도 중 400으로 나누어 나머지가 0인 경우 윤년
 		int year=2023;
 		
-		if(year%4==0) {
-			System.out.println(year + "는 윤년입니다");			
-		} else if(year%4==0 && year%100==0) {
-			System.out.println(year + "는 평년입니다");			
-		} else if(year%4==0 && year%100==0 && year%400==0) {
-			System.out.println(year + "는 윤년입니다");
-		} else {
-			System.out.println(year + "는 평년입니다");
-		}
+//		if(year%4==0) {
+//			System.out.println(year + "는 윤년입니다");			
+//		} else if(year%4==0 && year%100==0) {
+//			System.out.println(year + "는 평년입니다");			
+//		} else if(year%4==0 && year%100==0 && year%400==0) {
+//			System.out.println(year + "는 윤년입니다");
+//		} else {
+//			System.out.println(year + "는 평년입니다");
+//		}
+		
+		if(year%4==0 && year % 100 != 0 || year % 400 == 0) {
+		System.out.println(year + "는 윤년입니다");			
+		} else  {
+			System.out.println(year + "는 평년입니다");	
 
 
 		System.out.println("============================================================");
@@ -54,27 +57,56 @@ public class IfExample {
 		int kor=89, eng=93, mat=95;
 		int tot = kor+eng+mat;
 		double ave = tot/3.0;
+		String grade = "";
 		
-		if(kor<0 || kor>100|| eng<0 || eng>100 || mat<0 || mat>100) {
-			System.exit(0);
+		// 검증 결과를 저장하기 위한 변수 - false : 검증 성공, true : 검증 실패
+		
+//		 if(kor<0 || kor>100|| eng<0 || eng>100 || mat<0 || mat>100) {
+//			System.exit(0);
+//		if(ave>=90) {
+//			grade = "A";
+//		} else if(ave>=80) {
+//			grade = "B";
+//		} else if(ave>=70) {
+//			grade = "C";
+//		} else if(ave>=60) {
+//			grade = "D";
+//		} else {
+//			grade = "F";
+//		}
+//		System.out.println("이름 : " + name + ", 총점 : " + tot + ", 평균 : " + ((int)(ave*100)/100.0) + ", 학점 : " + grade);
+		boolean valid=false;
+		
+		if(kor > 100 || kor < 0) {
+			System.out.println("[에러]0~100 범위를 벗어난 비정상적인 국어점수가 입력되었습니다.");
+			valid=true;
 					}
-		if(ave>=90) {
-			System.out.println("이름 : " + name + ", 총점 : " + tot + ", 평균 : " + ((int)(ave*100)/100.0) + ", 학점 : " + "A");
-		} else if(ave>=80) {
-			System.out.println("이름 : " + name + ", 총점 : " + tot + ", 평균 : " + ((int)(ave*100)/100.0) + ", 학점 : " + "B");
-		} else if(ave>=70) {
-			System.out.println("이름 : " + name + " ,총점 : " + tot + ", 평균 : " + ((int)(ave*100)/100.0) + ", 학점 : " + "C");
-		} else if(ave>=60) {
-			System.out.println("이름 : " + name + ", 총점 : " + tot + ", 평균 : " + ((int)(ave*100)/100.0) + ", 학점 : " + "D");
-		} else {
-			System.out.println("이름 : " + name + ", 총점 : " + tot + ", 평균 : " + ((int)(ave*100)/100.0) + ", 학점 : " + "F");
+		if(eng > 100 || eng < 0) {
+			System.out.println("[에러]0~100 범위를 벗어난 비정상적인 영어점수가 입력되었습니다.");
+			valid=true;
+					}
+		if(mat > 100 || mat < 0) {
+			System.out.println("[에러]0~100 범위를 벗어난 비정상적인 수학점수가 입력되었습니다.");
+			valid=true;
+					}
+		if(valid) System.exit(0); // 검증이 실행한 경우 프로그램 종료.
+		
+		
+	
+		switch((int)ave/10) {
+		case 10: grade="A"; break;
+		case 9:	 grade="B"; break;
+		case 8:	 grade="C"; break;
+		case 7:	 grade="D"; break;
+		case 6:	 grade="F"; break;
 		}
-			
 		
-		
+		System.out.println("이름 = " + name + ", 총점 = "+ tot
+				+ " , 평균 = " + (int)(ave*100)/100.0 + ", 학점 = " + grade);
 			
 		
 
 		System.out.println("============================================================");
 	}
+}
 }

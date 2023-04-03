@@ -18,6 +18,12 @@ public class ForExample {
 		for(int i=1; i<10; i+=2) {
 			System.out.print(i+"\t");
 		}
+		
+//		for(int i=1; i<=10;i++) {
+//			if(i%2!=0) {
+//				System.out.print(i+"\t");
+//			}
+//		}
 
 		System.out.println();
 		System.out.println("=========================================");
@@ -25,8 +31,7 @@ public class ForExample {
 		//3의 배수의 합계에서 5의 배수의 합계를 뺀 결과값을 출력하세요.
 		//ex) 결과 = 633
 		
-		int tot3 = 0;
-		int tot5 = 0;
+		int tot3 = 0, tot5 = 0;
 		for(int i=0; i<=100; i+=3) {
 			tot3+=i;
 		}
@@ -34,6 +39,12 @@ public class ForExample {
 			tot5+=e;
 			}
 		System.out.println("결과 = "+ (tot3-tot5));
+		
+//		for(int i =1; i <=100; i++) {
+//			if(i%3==0) tot3+=i;
+//			if(i%5==0) tot5+=i;
+//		}
+//		System.out.println("결과 = "+ (tot3-tot5));
 		
 		
 		System.out.println("=========================================");
@@ -44,8 +55,14 @@ public class ForExample {
 		//    7 * 8 = 56
 		//    7 * 9 = 63
 		
+//		for(int i=1; i<10; i++) {
+//			System.out.println("7 * " + i + " = "+7*i);
+//			
+//		}
+		
+		int 단 = 7;
 		for(int i=1; i<10; i++) {
-			System.out.println("7 * " + i + " = "+7*i);
+			System.out.println(단 + " * " + i + " = "+단*i);
 			
 		}
 
@@ -54,10 +71,16 @@ public class ForExample {
 		//5!의 결과값을 출력하세요.(5! = 5 * 4 * 3 * 2 * 1)
 		//ex) 5! = 120
 		
-		int A = 1;
-		for(int i=5; i>0; i--) {
-			A = A*i;
-		}System.out.println("5! = " + A);
+//		int A = 1;
+//		for(int i=5; i>0; i--) {
+//			A = A*i;
+//		}System.out.println("5! = " + A);
+		
+		int num = 5, fac =1;
+		for(int i = num; i >= 1; i--) {
+			fac*=i;
+		}
+		System.out.println(num + "! = " + fac);
 		
 		
 
@@ -71,12 +94,22 @@ public class ForExample {
 		//    57
 		int begin=36, end=57;
 		
+//		for(int i=begin; i<=end; i++) {
+//			System.out.print(i+"\t");
+//			if(i%7==0) {			
+//				System.out.println();
+//			}	
+//			}
+		
+		int count=0;
 		for(int i=begin; i<=end; i++) {
 			System.out.print(i+"\t");
-			if(i%7==0) {			
+			count++;
+			if(count%7==0) {
 				System.out.println();
-			}	
 			}
+		}
+		
 			
 		
 		System.out.println("=========================================");	

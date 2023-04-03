@@ -83,6 +83,26 @@ public class ForApp {
 				sum+=i;
 			}
 			System.out.println(begin+"~" + end + "범위의 정수들의 합계 = " + sum);
+			System.out.println("=============================");
+			
+			for(int i=1, j=5 ; i <= 3; i++, j--) {
+				System.out.println("i = "+i+" , j = " +j);
+			}
+			System.out.println("=============================");
+			int i=1; // for 구문에 상관없이 계속 존재
+			
+			for(;i<4;i++) { // 초기식 생략 i=1
+				System.out.print(i+"\t");
+			}
+			for(;i>=1;i--) {
+				System.out.print(i+"\t");
+			}
+			System.out.println();
+			System.out.println("=============================");
+			// 조건식이 생략된 경우 무조건 참으로 처리 - 무한루프
+			/* for(;;) {
+				System.out.println("무한 반복되어 실해되는 명령");
+			} */
 		}
 		
 	}

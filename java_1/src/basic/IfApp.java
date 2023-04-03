@@ -4,6 +4,7 @@ package basic;
 // => 선택문(if, switch), 반복문(for, while), 기타(break, continue, return)
 
 // if : 조건식에 의해 명령을 선택 실행
+
 // 형식-1) if(조건식) { 명령; 명령; ...}
 // => 조건식의 결과가 참(ture)인 경우 블럭{} 내부에 작성된 명령들을 실행
 // => 블럭 {} 내부에 명령이 하나만 작성된 경우 블럭{} 기호 생략 가능 
@@ -12,8 +13,8 @@ package basic;
 // => 조건식 결과가 참인 경우와 거짓인 경우를 구분하여 블럭 내부에 작성된 명령들을 실행 / 참이면 if문 거짓이면 else문
 
 // 형식-3) if(조건식) { 명령; 명령; ...} else if(조건식) {명령; 명령; ...}
-// else if(조건식) {명령; 명령; ...} else {명령; 명령; ...}
-// => 조건식이 여려 개인 경우 명령을 구분하여 블럭{} 내부에 작성된 명령 실행
+//          else if(조건식) {명령; 명령; ...} else {명령; 명령; ...}
+// => 조건식이 여러 개인 경우 명령을 구분하여 블럭{} 내부에 작성된 명령 실행
 // => 마지막 else에 작성된 명령은 모든 조건식이 거짓인 경우 실행 - else 생략 가능
 
 // 프로그램의 흐름을 파악하기 위한 이클립스 기능 - Debug Perspective 사용 
@@ -116,13 +117,13 @@ public class IfApp {
 		String grade = "";
 		if(jumsu >= 90) {
 			grade = "A";
-		} else if(89>= jumsu && jumsu >= 80 ) {
+		} else if( jumsu >= 80 ) {
 			grade = "B";
-		} else if(79>= jumsu && jumsu >= 70 ) {
+		} else if(jumsu >= 70 ) {
 			grade = "C";
-		} else if(69>= jumsu && jumsu >= 60 ) {
+		} else if(jumsu >= 60 ) {
 			grade = "D";
-		} else if(59>= jumsu && jumsu >= 0) {
+		} else if(jumsu >= 0) {
 			grade = "F";
 		}
 		System.out.println("[결과]" + jumsu + "점 = " + grade + "학점");
