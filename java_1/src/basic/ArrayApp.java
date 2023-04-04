@@ -94,6 +94,29 @@ public class ArrayApp {
 		}
 		System.out.println();
 		System.out.println("==================================================================");
+		
+		int[] array= {54,70,64,87,96,21,65,76,11,34,56,41,77,80};
+		
+		// 배열의 모든 요소값에 대한 합계를 계산하여 출력하는 프로그램 작성
+		int tot = 0;
+		
+		for(int i=0; i<array.length; i++) {
+			tot+=array[i];
+		}
+		System.out.println("합계 = " + tot);
+		System.out.println("==================================================================");
+		
+		// 배열 요소값이 30~60 범위의 정수값이 저장된 요소의 갯수를 계산하여 출력하는 프로그램 작성
+		
+		int count = 0;
+		for(int element: array) {
+			if(element >= 30 && element <=60) {
+				count++;
+			}
+		}
+		System.out.println("30~60 범위의 갯수 : " + count);
+		System.out.println("==================================================================");
+	
 	}
 
 }
