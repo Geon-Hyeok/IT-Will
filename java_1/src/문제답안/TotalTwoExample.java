@@ -12,19 +12,29 @@ import java.util.Scanner;
 public class TotalTwoExample {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		
 		int tot = 0;
-		int x = 0;
-		do {
-			x = scanner.nextInt();
-			System.out.println("정수값 입력[0:종료] >> " + x);
-			tot+=x;
-		} while(x!=0); {
-			System.out.println("[결과]합계 = " + tot);
-		} scanner.close();
+		while(true) {
+			System.out.println("정수값 입력[0 : 종료] >>");
+			int num = scanner.nextInt();
+			tot+=num;
+			if(num == 0) break;
+				
+			}
+		{System.out.println("[결과]합계 : " + tot);
+		}scanner.close();
+		
+//		Scanner scanner = new Scanner(System.in);
+//
+//		int tot = 0;
+//		int x = 0;
+//		do {
+//			System.out.println("정수값 입력[0:종료] >> ");
+//			x = scanner.nextInt();
+//			tot+=x;
+//		} while(x!=0); {
+//			System.out.println("[결과]합계 = " + tot);
+//		} scanner.close();
+//		
+	
 	}
 }
-		
-		
-
-

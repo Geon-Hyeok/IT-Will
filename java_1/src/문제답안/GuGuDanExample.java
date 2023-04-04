@@ -14,22 +14,33 @@ import java.util.Scanner;
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		for(int dan=2; dan<10; dan++) {
+//		라벨: for(int dan = 2; dan<10; dan++) {
+//			System.out.println("단 입력[2~9] >> ");
+//			dan = scanner.nextInt();
+//			if(dan > 9 || dan < 2) {
+//				System.out.println("허용하는 범위를 벗어난 정수값을 입력했습니다");
+//				continue 라벨;
+//			}
+//			for(int b = 1; b<10; b++) {
+//				System.out.println(dan + " * " + b + " = " + dan*b);
+//				
+//			}break;
+//	       
+//		}scanner.close();
+		
+		int dan;
+		while(true) { // 키보드로 정수값을 입력받기 위한 반복문 - 무한루프
 			System.out.println("단 입력[2~9] >> ");
-			dan = scanner.nextInt();			
-			for(int i=1; i<10; i++) {
-				if(dan<2 || dan > 10) break;
-				System.out.println("범위를 벗어난 정수값을 입력하였습니다"); 
-				
-				System.out.println(dan + "*" + i + " = " + dan*i);
-			} break;
-			
-			
-			
+			dan=scanner.nextInt();
+			if(dan>=2 && dan <= 9) break; // 정상적인 값이 입력된 경우 반복문 종료
+			System.out.println("[에러] 허용하는 범위를 벗어난 정수값을 입력했습니다");
 		}
+		for(int b =1; b<=9; b++) {
+			System.out.println(dan + " * " + b + " = " + dan*b);
+		}
+		scanner.close();
 	}
-}
- 
+ }
 	
  
  
