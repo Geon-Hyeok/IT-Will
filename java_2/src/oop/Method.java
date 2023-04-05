@@ -48,13 +48,13 @@ public class Method {
 	}
 
 	void printTwo(int num) {
-		
+
 		// 매개변수에 저장된 값에 대한 검증
-		if(num<=0) {
+		if (num <= 0) {
 			System.out.println("[에러] 매개변수에는 0보다 큰 값이 저장되어야 합니다");
 			return; // 메소드 종료
 		}
-		
+
 		int tot = 0;
 		for (int i = 1; i <= num; i++) {
 			tot += i;
@@ -62,23 +62,80 @@ public class Method {
 		System.out.println("1~" + num + " 범위의 정수들의 합 : " + tot);
 	}
 
-	void printThree(int num1, int num2) {
-		
+	 void printThree(int num1, int num2) {
+
 //		if(num1>num2) { // 비정상적인 값이 전달되어 저장된 경우
 //			System.out.println("[에러] 첫번째 전달값이 두번째 전달값보다 작아야 됩니다");
 //			return; // 메소드 종료
 //		}
-		
-		if(num1>num2) { // 입력값 순서 변환 / 치환
-			int temp=num1;
-			 num1=num2;
-			 num2=temp;
+
+		if (num1 > num2) { // 입력값 순서 변환 / 치환
+			int temp = num1;
+			num1 = num2;
+			num2 = temp;
 		}
-		
+
 		int tot = 0;
 		for (int i = num1; i <= num2; i++) {
 			tot += i;
 		}
 		System.out.println(num1 + " ~ " + num2 + " 범위의 정수들의 합 : " + tot);
 	}
+
+	int returnTot(int num1, int num2) {
+		int tot = 0;
+		for (int i = num1; i <= num2; i++) {
+			tot += i;
+		}
+
+		// 변수에 저장된 값을 메소드를 종료하며 메소드를 호출하는 명령에게 반환
+		// => 반환되는 값의 자료형과 메소드의 반환형이 반드시 동일
+		return tot;
+	}
+
+	// 매개변수로 정수값을 전달받아 홀수와 짝수를 구분하여 반환하는 메소드
+	// => false 반환 : 홀수, true : 짝수
+	boolean isOddEven(int num) {
+		if (num % 2 == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	// 배열을 반환하는 메소드
+	int[] returnArray() {
+		int[] array= {10, 20, 30, 40, 50};
+		return array; // 배열의 메모리 주소 반환 - 배열 반환
+				
+		//  return new int[] {10, 20, 30, 40, 50}; -> 가능
+		// return {10, 20, 30, 40, 50}; -> 에러 발생
+		
+	}
+	
+	// 매개변수 3개에 전달된 정수값들의 합계를 계산하여 반환하는 메소드
+	int sumOne(int num1, int num2, int num3) {
+		return num1+num2+num3;
+	}
+	
+	// 매개변수로 배열을 전달받아 배열의 모든 요소값들의 합계를 계산하여 반환하는 메소드
+	int sumTwo(int[]array) {
+		int tot=0;
+		for(int num : array) {
+			tot+=num;
+		}
+		return tot;
+	}
+	
+	/* 매개변수 생략 기호(...)를 사용하여 매개변수를 작성하면 
+	   값을 0개 이상 전달받아 메소드에서 배열처럼 사용 가능 */
+	int sumThree(int...array) {
+		int tot=0;
+		for(int num : array) {
+			tot+=num;
+		}
+		return tot;
+	}
+	
+
 }
