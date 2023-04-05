@@ -68,5 +68,6 @@ public class MethodApp {
 		System.out.println(method.sumThree(10,20,30));
 		System.out.println(method.sumThree());
 		System.out.println(method.sumThree(1, 10, 100, 1000));
+		
 	}
 }

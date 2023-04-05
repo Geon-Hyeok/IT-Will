@@ -136,6 +136,5 @@ public class Method {
 		}
 		return tot;
 	}
-	
 
 }
