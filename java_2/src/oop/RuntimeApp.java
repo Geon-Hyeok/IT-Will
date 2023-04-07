@@ -2,7 +2,6 @@ package oop;
 
 import java.io.IOException;
 
-// Runtime 클래스 : Java 프로그램에서 운영체제(Operation System) 관련 정보를 제공하는 기능의 메소드가 선언된 클래스 
 public class RuntimeApp {
 	public static void main(String[] args) throws IOException {
 		// Runtime 클래스 : Java 프로그램에서 운영체제(Operation System) 관련 정보를 제공하는 기능의 메소드가 선언된 클래스
@@ -23,7 +22,7 @@ public class RuntimeApp {
 		
 		System.out.println("메모리 정리하기 전 JVM 사용 메모리의 크기 >> ");
 		// Runtime.totalMemory() : JVM이 사용 가능한 전체 메모리의 크기를 반환하는 메소드
-		// Runtime.totalMemory() : JVM이 사용 가능한 여유 메모리의 크기를 반환하는 메소드
+		// Runtime.freeMemory() : JVM이 사용 가능한 여유 메모리의 크기를 반환하는 메소드
 		System.out.println(runtime1.totalMemory()-runtime1.freeMemory()+"Byte");
 		
 		// Runtime.gc(); : 메모리를 정리하는 프로그램(Garbage Collector)를 실행하는 메소드 

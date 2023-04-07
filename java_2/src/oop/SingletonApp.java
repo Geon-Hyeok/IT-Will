@@ -13,7 +13,7 @@ public class SingletonApp {
 //		singleton1.display();
 //		singleton2.display();
 
-		// 싱글톤 클래스는 생성자가 은닉화 성언되어 있어 new 연산자로 생성자를 호출하여 객체 생성 불가능
+		// 싱글톤 클래스는 생성자가 은닉화 선언되어 있어 new 연산자로 생성자를 호출하여 객체 생성 불가능
 		// => 객체를 반환하는 정적 메소드를 호출하여 참조변수에 반환받은 객체를저장하여 사용
 		Singleton singleton1 = Singleton.getInstance();
 		Singleton singleton2 = Singleton.getInstance();

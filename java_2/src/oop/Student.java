@@ -21,7 +21,6 @@ public class Student {
 
 	// 생성자(Constructor) : 객체를 생성하면서 인스턴스 필드에 원하는 초기값을 저장하기 위해 작성
 	public Student() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public Student(int num, String name, int kor, int eng) {
