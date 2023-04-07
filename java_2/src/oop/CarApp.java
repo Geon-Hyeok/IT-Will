@@ -11,8 +11,8 @@ public class CarApp {
 		// Car 클래스를 객체를 생성하여 참조변수에 저장
 		// => 하나의 클래스로 서로 다른 객체를 여러개 생성 가능
 		// => 클래스는 객체를 생성하기 위한 틀(Template)
-		// => 객체를 생성하면 객체의 필드에서는 기본값(숫자형 : 0, 논리형 : false,
-		// 참조형 : null)이 초기값으로 자동 저장
+		// => 객체를 생성하면 객체의 필드에서는 기본값(숫자형 : 0, 논리형 : false, 참조형 : null)이 초기값으로 자동 저장
+
 		Car carOne = new Car();
 		Car carTwo = new Car();
 		Car carThree = new Car();
