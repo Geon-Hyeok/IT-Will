@@ -5,7 +5,7 @@ public class CarApp {
 		// 엔진 생성
 		Engine engine = new Engine();
 
-		engine.setFualType("경유");
+		engine.setFuelType("경유");
 		engine.setDisplacement(2000);
 
 		// engine.displayEngine();
