@@ -20,8 +20,8 @@ package oop;
 public class Member {
 	// 필드선언 : 객체를 생성하면 객체의 필드에는 기본값이 초기값으로 자동 저장
 	private String id;
-	private String name; 
-	private String email; 
+	private String name;
+	private String email;
 
 	// 생성자 선언 : 객체를 생성하기 위한 특별한 형태의 메소드
 	// => 생성자를 선언하지 않으면 매개변수가 없는 기본 생성자 제공
@@ -38,7 +38,7 @@ public class Member {
 	// 이클립스 사용하여 기본 생성자 선언 가능
 	// =>[Ctrl} + [Space]
 
-	public Member() {		
+	public Member() {
 		// this(값, 값, ...) : 생성자에서 this 키워드로 다른 생성자를 호출하는 명령
 		// => this. 키워드로 생성자를 호출하는 명령은 첫번째 명령으로 작성
 		// 다른 명령이 먼저 실행될 경우 에러 발생

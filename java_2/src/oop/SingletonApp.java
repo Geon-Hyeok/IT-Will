@@ -29,7 +29,7 @@ public class SingletonApp {
 		// 싱글톤 클래스는 참조변수에 반환받은 객체를 저장하여 메소드를 호출하지 않고 반환받은 객체로 직접 메소드를 호출하여 사용하는 것을 권장
 		Singleton.getInstance().display();
 		Singleton.getInstance().display();
-		
+
 		System.out.println("============================================================");
 
 	}
