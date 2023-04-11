@@ -29,6 +29,7 @@ public class WhileApp {
 			tot+=j;
 			j++;
 		} while(j<=100);
+		
 	System.out.println("1~100 범위의 정수들의 합계 = " + tot);
 	System.out.println("===============================================");
 	
