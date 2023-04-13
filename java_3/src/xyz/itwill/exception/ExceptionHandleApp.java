@@ -19,7 +19,7 @@ package xyz.itwill.exception;
 //
 // 2. 실행 예외 : 프로그램 실행시 예외가 발생될 가능성이 낮아 예외처리를 하지 않아도 컴파일시 에러 미발생
 // => RuntimeException 클래스를 상속받은 클래스로 예외처리
-// => 실행 예외는 예외처리를 하지 않은 경우 JVM이 자동으로 예외처리하여 예외메세지 제공
+// => 실행 예외는 예외처리를 하지 않은 경우 JVM이 자동으로 예외처리하여 예외 메세지 제공
 
 // 예외처리 방법 >> try ~ catch 구문 사용
 // 형식) try {
@@ -64,7 +64,7 @@ public class ExceptionHandleApp {
 			// Throwable.printStackTrace(); : 예외가 발생된 경로를 역추적하여 발생된 정보를
 			// 제공받아 출력하는 메소드
 			e.printStackTrace();
-			e.getStackTrace();
+		    e.getStackTrace();
 		} finally {
 			System.out.println("[메세지] 예외 발생과 상관없이 무조건 실행될 명령"); // 생략 가능
 		}
