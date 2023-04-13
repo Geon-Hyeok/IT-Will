@@ -14,6 +14,7 @@ public class EnumApp {
 		System.out.println("삭제 = " + EnumTwo.REMOVE);
 		System.out.println("검색 = " + EnumTwo.SEARCH);
 		System.out.println("==============================================================");
+
 		// 열거형에 선언된 상수를 저장하기 위해서는 반드시 열거형(참조형)을 이용하여 변수 선언
 		// => 상수필드가 선언된 열거형을 하나의 자료형으로 사용 가능
 		// int choice=EnumOne.INSERT; // 에러 발생
