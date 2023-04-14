@@ -19,9 +19,9 @@ package xyz.itwill.app;
 // => [Ctrl] + [Shift] + [O] >> import 명령을 정리하는 단축키 : 불필요한 자료형에 대한
 // import 설정을 제거하거나 필요한 자료형에 대한 import 설정을 추가
 
-import xyz.itwill.subject.JavaSubject;
+import xyz.itwill.subject.JavaSubject; // 아이티윌 패키지의 JavaSubject
 import xyz.itwill.subject.OracleSubject;
-// 자료형의 이름이 같은 경우 import 처리 불가능
+// 자료형의 이름이 같은 경우 import 처리 불가능 // 유니윌 패키지의 JavaSubject
 // import xyz.uniwill.subject.JavaSubject;
 
 public class SubjectApp {

@@ -37,8 +37,9 @@ public class CalcAgeApp {
 		// @SuppressWarnings(value = "deprecation")
 		@SuppressWarnings("deprecation")
 		int currentYear = now.getYear()+1900;
+		System.out.println(currentYear);
 		
-		int age = 2023 - birthYear+1;
+		int age = currentYear - birthYear+1;
 		System.out.println("[결과]" + name + "님의 나이는 " + age + "살 입니다" );
 		
 		scanner.close();
