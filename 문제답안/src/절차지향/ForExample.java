@@ -1,4 +1,4 @@
-package 문제답안;
+package 절차지향;
 public class ForExample {
 	public static void main(String[] args) {
 		//본인 이름을 화면에 7번 출력하세요.

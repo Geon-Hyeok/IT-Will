@@ -1,4 +1,4 @@
-package 문제답안;
+package 절차지향;
 
 import java.util.Scanner;
 

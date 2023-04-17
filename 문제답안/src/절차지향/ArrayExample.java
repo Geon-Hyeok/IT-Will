@@ -1,4 +1,4 @@
-package 문제답안;
+package 절차지향;
 public class ArrayExample {
 	public static void main(String[] args) {
 		//사람들의 나이를 저장한 배열 생성하여 참조변수에 저장		

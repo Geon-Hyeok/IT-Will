@@ -1,4 +1,4 @@
-package 문제답안;
+package 절차지향;
 
 public class MultiforExample {
 	public static void main(String[] args) {
