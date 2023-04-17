@@ -3,7 +3,7 @@ package xyz.itwill.exception;
 public class ExceptionThrowsApp {
 	// 예외가 발생된 명령의 메소드에서 예외처리를 하지 않고 발생된 예외를
 	// 메소드를 호출한 명령으로 전달 가능 - 예외 전달
-	// 형식) 접근제한자 반환형 메소드명 (자료형 매개변수 ...) thrwos 예외 클래스, 예외클래스, ... { }
+	// 형식) 접근제한자 반환형 메소드명 (자료형 매개변수 ...) throws 예외 클래스, 예외클래스, ... { }
 	// => 예외가 전달되는 메소드를 호출한 명령에서 예외처리
 	public static void display() throws ArrayIndexOutOfBoundsException {
 		int[] array = { 10, 20, 30, 40, 50 };
