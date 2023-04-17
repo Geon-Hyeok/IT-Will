@@ -120,14 +120,14 @@ public class StringApp {
 		System.out.println("입력된 이름은 [" + str8 + "]입니다.");
 		// String.replace(String regEx, String replacement) : String 객체에 저장된 문자열에서
 		// 검색 문자열(정규표현식)을 찾아 치환 문자열로 변경하여 반환하는 메소드
-		System.out.println("입력된 이름은 [" + str8.replace(" ", "").replace("꺽", "꺼억") + "]입니다.");
+		System.out.println("입력된 이름은 [" + str8.replace(" ", "").replace("꺽", "걱") + "]입니다.");
 		System.out.println("==============================================================");
 		String str9 = "010-1234-5678";
 
 		System.out.println("전화번호 = " + str9);
 		System.out.println("==============================================================");
 		/// String.split(String regEx) : String 객체에 저장된 문자열을 매개변수로 전달받은
-		// 문자열(정규표현식)로 구분 분리하여 문자열 배열로 반환하는 메소드
+		// 문자열(구분자 : Delimiter - 정규표현식)로 구분 분리하여 문자열 배열로 반환하는 메소드
 		// => 정규표현식에서 사용되는 메타문자를 일반문자로 변환하여 사용하기 위해 [\\]를
 		// 사용하여 회피문자로 처리하여 표현
 		String[] numArray = str9.split("-");
