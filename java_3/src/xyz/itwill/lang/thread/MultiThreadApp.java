@@ -15,14 +15,14 @@ package xyz.itwill.lang.thread;
 // => 생성된 스레드는 자동으로 Thread 객체의 run() 메소드를 호출하여 run() 메소드의 명령 실행
 
 // 방법 2) Runnable 인터페이스 이용
-// => 클래스가 이미 다른 클래스를 상속받아 Thread 클래스를 상속받지 못하는 경우 
+// => 클래스가 이미 다른 클래스를 상속받아 Thread 클래스를 상속받지 못하는 경우 사용하는 방법
 // Runnable 인터페이스를 상속받아 새로운 스레드를 생성하기 위한 방법 
 // 1. Runnable 인터페이스를 상속받은 자식클래스 생성
 // 2. Runnable 인터페이스를 상속받은 자식클래스에서 run() 메소드를 오버라이드 선언
 // => run() 메소드에는 프로그램 개발자에 의해 생성된 스레드가 실행하기 위한 명령 작성
 // 3. Thread 클래스로 Thread 객체를 생성 - Thread 클래스의 생성자 중 매개변수에 Runnable
 // 인터페이스를 상속받은 자식클래스의 객체를 전달하여 Thread 객체를 생성하는 생성자 이용
-// Thread 객체로 start() 메소드 호출
+// 4. Thread 객체로 start() 메소드 호출
 
 public class MultiThreadApp {
 	// JVM에 의해 main 스레드가 자동으로 생성되어 main() 메소드를 호출해 main()메소드의 명령 실행
@@ -34,11 +34,11 @@ public class MultiThreadApp {
 		// Thread thread = new Thread();
 		// thread.start();
 
-		   MultiThreadOne one = new MultiThreadOne();
+		//   MultiThreadOne one = new MultiThreadOne();
 		// Thread.start() : Thread 객체로 새로운 스레드를 생성하기 위한 메소드
 		// => 생성된 스레드는 자동으로 Thread 객체의 run()메소드(숨겨진 메소드)를 호출
 		// => 자식클래스의 오버라이드 선언된 run() 메소드가 호출되어 명령 실행
-		   one.start();
+		//   one.start();
 		// 하나의 Thread 객체는 하나의 스레드 생성만 가능
 		// => Thread 객체를 사용하여 star() 메소드를 여러번 호출할 경우 IlegalThreadStteException
 		// => 다중 스레드 프로그램에서 예외가 발생된 경우 예외가 발생된 스레드만 소멸

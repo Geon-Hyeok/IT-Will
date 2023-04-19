@@ -33,7 +33,7 @@ public class StringBufferApp {
 		System.out.println("===========================================");
 
 		// StringBuffer.insert(int index, Object o) : StringBuffer 객체에 저장된 문자열에 매개변수로
-		// 전달받은 문자열을 원하는 위치(첨자)에 삽입하는 메소드
+		// 전달받은 값을 원하는 위치(첨자)에 삽입하는 메소드
 		sb.insert(4, "X");
 		System.out.println("sb = " + sb);
 		System.out.println("===========================================");
@@ -44,7 +44,7 @@ public class StringBufferApp {
 		System.out.println("sb = " + sb);
 		System.out.println("===========================================");
 
-		// StringBuffer.deleteCharAt(int beginIndex, int endIndex) : StringBuffer 객체에
+		// StringBuffer.delete(int beginIndex, int endIndex) : StringBuffer 객체에
 		// 저장된 문자열에서
 		// 매개변수로 전달받은 시작첨자부터 종료첨자 범위의 문자열을 제거하는 메소드
 		sb.delete(4, 6);
