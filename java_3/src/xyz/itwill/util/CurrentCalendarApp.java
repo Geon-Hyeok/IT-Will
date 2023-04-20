@@ -2,7 +2,7 @@ package xyz.itwill.util;
 
 import java.util.Calendar;
 
-//현재 년월에 대한 달력을 출력하는 프로그램 작성
+// 현재 년월에 대한 달력을 출력하는 프로그램 작성
 public class CurrentCalendarApp {
 	public static void main(String[] args) {
 		// 시스템의 현재 날짜와 시간이 저장된 Calendar 객체를 반환받아 저장
