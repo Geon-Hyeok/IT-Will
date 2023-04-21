@@ -22,7 +22,7 @@ public class PanelApp extends Frame {
 		// TextField 클래스 : 한 줄의 문자열을 입출력하기 위한 컴퍼넌트를 구현하기 위한 클래스
 		TextField textField = new TextField();
 		
-		// TextArea 클래스 : 여러 줄의 문자열을 입출력하기 윟나 컴퍼넌트를 구현하기 위한 클래스
+		// TextArea 클래스 : 여러 줄의 문자열을 입출력하기 위한 컴퍼넌트를 구현하기 위한 클래스
 		TextArea textArea = new TextArea();
 		
 		// Panel 클래스 : 컴퍼넌트를 배치하여 그룹화 하기 위한 종속적인 컨테이너 클래스
