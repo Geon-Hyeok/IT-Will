@@ -1,6 +1,6 @@
 package basic;
 
-// 제어문(Control Statement) : 프로그램의 름(스레드 = Thread)을 바꾸어 주는 명령 
+// 제어문(Control Statement) : 프로그램의 흐름(스레드 = Thread)을 바꾸어 주는 명령 
 // => 선택문(if, switch), 반복문(for, while), 기타(break, continue, return)
 
 // if : 조건식에 의해 명령을 선택 실행
