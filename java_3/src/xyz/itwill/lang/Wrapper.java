@@ -23,7 +23,7 @@ public class Wrapper {
 		
 		// Wrapper 클래스는 오토박싱과 오토언박싱 기능을 제공받아 객체를 생성하거나 사용이 가능
 		// 오토박싱(AutoBoxing) : 원시형 리터럴(값)을 JVM이 자동으로 Wrapper 클래스의 객체로 생성하여 제공하는 기능
-		// 오토언박싱(AutoUnBoxing) : JVM이 자동으로 Wrapper 클래스의 객체에 저장된 값을 원시형 리터럴로 제공       하는 기능
+		// 오토언박싱(AutoUnBoxing) : JVM이 자동으로 Wrapper 클래스의 객체에 저장된 값을 원시형 리터럴로 제공하는 기능
 		Integer num1 = 100, num2 = 200;
 		Integer num3 = num1+num2;
 		System.out.println("num3 = " + num3);
