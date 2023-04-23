@@ -40,7 +40,7 @@ public class MultiThreadApp {
 		// => 자식클래스의 오버라이드 선언된 run() 메소드가 호출되어 명령 실행
 		//   one.start();
 		// 하나의 Thread 객체는 하나의 스레드 생성만 가능
-		// => Thread 객체를 사용하여 star() 메소드를 여러번 호출할 경우 IlegalThreadStteException
+		// => Thread 객체를 사용하여 start() 메소드를 여러번 호출할 경우 IllegalThreadStateException
 		// => 다중 스레드 프로그램에서 예외가 발생된 경우 예외가 발생된 스레드만 소멸
 		// one.start(); // 예외가 발생되면 main 스레드 소멸
 
