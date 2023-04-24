@@ -24,12 +24,15 @@ import java.awt.event.ActionListener;
 // => Listener 인터페이스를 상속받아 자식클래스에서 추상메소드를 오버라이드 선언하여
 // 오버라이드 선언된 메소드에 이벤트 처리 명령 작성
 
-// 3. 이벤트 소스에서 이벤트가 발생되면 이벤트 처리 클래스의 객체를 제공받아 이벤트 처리 명령이
-// 실행되도록 설정 - Component.addXXXListener(Listener 1) 메소드 호출
-// => Component.addXXXListener(Listener 1) : 컴퍼넌트의 이벤트를 처리하기 위한 이벤트 처리 객체 등록 메소드
-// => 이벤트 처리 객체를 제공받아 자동으로 이벤트 처리 메소드를 호출하여 
+// 3.이벤트 소스에서 이벤트가 발생되면 이벤트 처리 클래스의 객체를 제공받아 이벤트 처리 명령이
+// 실행되도록 설정 - Component.addXXXListener(Listener l) 메소드 호출
+// => Component.addXXXListener(Listener l) : 컴퍼넌트의 이벤트를 처리하기 위한 이벤트 처리 
+// 객체를 매개변수로 제공받아 등록(추가)하기 위한 메소드
+// => JVM은 컴퍼넌트에서 이벤트가 발생되면 등록된 이벤트 처리 객체를 사용하여 자동으로 
+// 이벤트 처리 메소드를 호출하여 이벤트 처리
 
-// [EXIT] 버튼을 누르면 프로그램을 종료하는 GUI 프로그램 작성
+// [EXIT] 버튼을 누른 경우 프로그램을 종료하는 기능의 프로그램 작성
+// => 이벤트 처리 메소드에서 디자인 클래스의 컴퍼넌트 사용 불가능
 public class EventHandleApp extends Frame {
 	private static final long serialVersionUID = 1L;
 
