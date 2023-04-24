@@ -12,7 +12,7 @@ public class MultiForApp { // 다중for문
 		System.out.println("이동방법의 갯수 = " + cnt);
 		System.out.println("============================================");
 		
-		// 7행 4열의 별 출력 // 
+		// 4행 7열의 별 출력 // 
 		
 		for(int i = 1; i <= 4; i++) { // 행(Row)을 처리하기 위한 반복문
 			for(int j = 1; j <= 7; j++) { // 열(Column)을 처리하기 위한 반복문

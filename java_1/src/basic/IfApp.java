@@ -1,6 +1,6 @@
 package basic;
 
-// 제어문(Control Statement) : 프로그램의 프름(스레드 = Thread)을 바꾸어 주는 명령 
+// 제어문(Control Statement) : 프로그램의 흐름(스레드 = Thread)을 바꾸어 주는 명령 
 // => 선택문(if, switch), 반복문(for, while), 기타(break, continue, return)
 
 // if : 조건식에 의해 명령을 선택 실행
@@ -45,8 +45,8 @@ public class IfApp {
 		System.out.println("================================================");
 		
 		if(score >= 90) {
-			System.out.println("[결과] 점수가 60점 이상이므로 <합격>입니다.");
-		} else {System.out.println("[결과] 점수가 60점 미만이므로 <불합격>입니다.");
+			System.out.println("[결과] 점수가 90점 이상이므로 <합격>입니다.");
+		} else {System.out.println("[결과] 점수가 90점 미만이므로 <불합격>입니다.");
 			
 		}
 		System.out.println("================================================");
