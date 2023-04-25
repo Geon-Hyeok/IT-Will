@@ -14,7 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 //시스템 현재 날짜와 시간을 1초마다 제공받아 출력하는 GUI 프로그램 작성
-// => 새로운 스레드를 생성하여 날짜와 시간을 1초마자 제공받아 컴퍼넌트 변경
+// => 새로운 스레드를 생성하여 날짜와 시간을 1초마다 제공받아 컴퍼넌트 변경
 public class DigitalClockApp extends JFrame {
 	private static final long serialVersionUID = 1L;
 
