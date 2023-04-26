@@ -22,9 +22,9 @@ public class FileCopyCharApp {
 		BufferedWriter out = null;
 
 		try {
-			in = new BufferedReader(new FileReader("c:/data/bandizip.exe"));
+			in = new BufferedReader(new FileReader("c:\\data\\byte.txt"));
 
-			out = new BufferedWriter(new FileWriter("c:/data/bandizip_char.exe"));
+			out = new BufferedWriter(new FileWriter("c:\\data\\byte_char.txt"));
 
 			int readByte;
 			while (true) {

@@ -24,10 +24,10 @@ public class FileCopyByteApp {
 		BufferedOutputStream out = null;
 		try {
 			// 원본파일의 값을 원시데이타로 읽기 위한 입력스트림을 생성하여 저장
-			in = new BufferedInputStream(new FileInputStream("c:/data/bandizip.exe"));
+			in = new BufferedInputStream(new FileInputStream("C:\\Users\\itwill\\Desktop\\0329.txt"));
 
 			// 타겟파일에 원시데이타를 전달하여 저장하기 위한 출력스트림을 생성하여 저장
-			out = new BufferedOutputStream(new FileOutputStream("c:/data/bandizip_byte.exe"));
+			out = new BufferedOutputStream(new FileOutputStream("C:\\Users\\itwill\\Desktop\\0329_byte.txt"));
 
 			int readByte;
 
