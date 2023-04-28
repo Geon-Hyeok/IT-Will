@@ -8,7 +8,7 @@ import java.net.ServerSocket;
 
 // 서버(Server) : 외부의 컴퓨터(클라이언트)가 접속할 수 있는 환경과 서비스를 제공하기 위한 컴퓨터
 // => ServerSocket 클래스를 사용하여 서버 프로그램 작성
-// 클라이언트(Client) 서버에 접속하여 서비스를 제공받을 수 있는 컴퓨터
+// 클라이언트(Client) : 서버에 접속하여 서비스를 제공받을 수 있는 컴퓨터
 // => Socket 클래스를 사용하여 클라이언트 프로그램 작성
 
 // ServerSocket 클래스를 사용하여 사용 가능한 포트번호를 검색하는 프로그램 작성
@@ -26,7 +26,7 @@ public class ServerSocketApp {
 				ServerSocket serverSocket = new ServerSocket(i);
 
 				System.out.println("[메세지]" + i + "번 포트는 네트워크 프로그램에서 사용 가능합니다");
-				
+
 				// serverSocket.close(); ServerSocket 객체를 제거하는 메소드
 				// => 클라이언트가 접속할 수 있는 환경 소멸
 				serverSocket.close();

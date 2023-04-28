@@ -19,6 +19,7 @@ public class MessageSendApp {
 		String message = in.readLine();
 
 		// DatagramSocket 클래스 : 다른 컴퓨터와 연결하기 위한 정보를 저장하기 위한 클래스
+		// => 다른 컴퓨터로 데이터를 보내기 위해 DatagramSocket 클래스의 기본생성자로 객체를 생성
 		DatagramSocket socket = new DatagramSocket();
 
 		// 연결할 컴퓨터의 네트워크 식별자가 저장된 InetAddress 객체를 반환받아 저장
@@ -28,17 +29,18 @@ public class MessageSendApp {
 		byte[] data = message.getBytes();
 
 		// DatagramPacket 클래스 : 연결 컴퓨터에게 보낼 패킷정보를 저장하기 위한 클래스
-		// => DatagramPacket 클래스의 DatagramPacket(byte[] data, int length, InetAddress, int port)
+		// => DatagramPacket 클래스의 DatagramPacket(byte[] data, int length, InetAddress,
+		// int port)
 		// 생성자를 사용하여 데이터를 보내기 위한 패킷정보가 저장된 DatagramPacket 객체 생성
 		DatagramPacket packet = new DatagramPacket(data, data.length, address, 4000);
-		
+
 		// DatagramSocekt.send(DatagramPacket packet) : 매개변수로 전달받은 DatagramPacket
 		// 객체의 패킷 정보를 이용하여 데이터(패킷)를 전달하는 메소드
 		socket.send(packet);
-		
-		//DatagramSocket.clos() : DatagramSocket 객체를 제거하는 메소드
+
+		// DatagramSocket.clos() : DatagramSocket 객체를 제거하는 메소드
 		socket.close();
-		
+
 		System.out.println("[결과]연결 컴퓨터에게 메세지를 보냈습니다.");
-}
+	}
 }
