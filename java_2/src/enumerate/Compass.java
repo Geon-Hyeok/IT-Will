@@ -1,4 +1,4 @@
-package enumerate;
+ package enumerate;
 
 public enum Compass {
 	// 열거형에 선언된 상수필드는 기본적으로 정수형(int)으로 설정

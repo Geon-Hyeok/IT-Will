@@ -6,7 +6,7 @@ public class OverloadApp {
 
 		overload.displayInt(100);
 		// 메소드의 매개변수에 잘못된 값을 전달할 경우 에러 발생
-		// overload.displayBoolean(false);
+		// overload.displayInt(false);
 		overload.displayBoolean(false);
 		overload.displayString("홍길동");
 		System.out.println("==========================================");

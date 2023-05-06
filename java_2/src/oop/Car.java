@@ -33,7 +33,7 @@ package oop;
 
 public class Car {
 
-	// 필드(Field) : 클래스 내부에 서언된 모든 메소드는 필드 접근 가능
+	// 필드(Field) : 클래스 내부에 선언된 모든 메소드는 필드 접근 가능
 	private String modelName; // 모델명
 	private boolean engineStatus; // 엔진상태 -> false : EngineOff, true : EngineOn (가정)
 	private int currentSpeed; // 현재속도
