@@ -12,7 +12,7 @@ public class Student {
 	private String name;
 	private int kor, eng, tot;
 
-	// 정적 필드(Static Field) : 클래스를 읽어 메모리(MethodArae)에 저장될때 생성되는 필드
+	// 정적 필드(Static Field) : 클래스를 읽어 메모리(MethodArea)에 저장될때 생성되는 필드
 	// => 객체가 생성되기 전에 메모리에 하나만 생성되는 필드
 	// => 생성자에 초기화 처리하지 않고 직접 초기값을 필드에 저장
 	// => 클래스로 생성된 모든 객체가 정적 필드 사용 가능 - 공유값 : 메모리 절약 및 필드값 변경 용이

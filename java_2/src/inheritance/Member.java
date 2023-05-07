@@ -6,7 +6,6 @@ public class Member {
 	private String name;
 
 	public Member() {
-
 	}
 
 	public Member(String id, String name) {

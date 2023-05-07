@@ -55,16 +55,16 @@ public class ExceptionHandleApp {
 		} catch (ArrayIndexOutOfBoundsException e) { // 예외객체를 전달받아 참조변수에 저장
 			// 프로그램 사용자에게 예외 관련 메세지 출력 => 선택 사항
 			System.out.println("[예외]프로그램에 예기치 못한 오류가 발생되었습니다.");
-			
-			// 프로그램 개발자에게 예외관련 메세지를 기록하여 제공 - 에러 로그 => 필수 사항\
+
+			// 프로그램 개발자에게 예외관련 메세지를 기록하여 제공 - 에러 로그 => 필수 사항
 			// => 참조변수에 저장된 예외 관련 객체의 메소드를 호출하여 작성
 			// Throwable.getMessage() : 예외 객체에 저장된 예외 메세지를 반환하는 메소드
 			System.out.println("[예외]" + e.getMessage());
-			
+
 			// Throwable.printStackTrace(); : 예외가 발생된 경로를 역추적하여 발생된 정보를
 			// 제공받아 출력하는 메소드
 			e.printStackTrace();
-		    e.getStackTrace();
+			e.getStackTrace();
 		} finally {
 			System.out.println("[메세지] 예외 발생과 상관없이 무조건 실행될 명령"); // 생략 가능
 		}
